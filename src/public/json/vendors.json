@@ -1,0 +1,80 @@
+[
+  {
+    "id": "vendor-001",
+    "name": "Tasty Bites Catering",
+    "category": "Catering",
+    "rating": 4.8,
+    "review_count": 95,
+    "price": "$750.00",
+    "phone": "+234 803 123 4567",
+    "location": "23 Glover Road, Lagos, LA, NG",
+    "image": "../images/vendors/tastybites.jpeg",
+    "website": "https://www.instagram.com/____tastybites/",
+    "description": "Premium wedding and event catering services in Lagos with over 10 years of experience."
+  },
+  {
+    "id": "vendor-002",
+    "name": "Elizabeth R Events Decor",
+    "category": "Decor",
+    "rating": 4.9,
+    "review_count": 120,
+    "price": "$1000.40",
+    "phone": "+234 802 987 6543",
+    "location": "45 Victoria Island, Lagos, LA, NG",
+    "image": "https://elizabethrevents.com.ng/wp-content/uploads/elementor/thumbs/Elizabeth-R-Events-Logo-q95oag04g6c7ohkdcyiwp1dk6yxi63qzxcfsni3fnk.png",
+    "website": "https://elizabethrevents.com.ng/",
+    "description": "Specializing in luxurious event decor and design, making your events unforgettable."
+  },
+  {
+    "id": "vendor-003",
+    "name": "DJ Beats Entertainment",
+    "category": "Entertainment",
+    "rating": 4.7,
+    "review_count": 80,
+    "price": "$200.70",
+    "phone": "+234 801 234 5678",
+    "location": "12 Allen Avenue, Lagos, LA, NG",
+    "image": "../images/vendors/djbeatss.jpeg",
+    "website": "https://www.instagram.com/dj_beats_city_nakodar_/",
+    "description": "Professional DJ services for weddings, parties, and corporate events with a wide range of music."
+  },
+  {
+    "id": "vendor-004",
+    "name": "Flowers Lagos",
+    "category": "Floral",
+    "rating": 4.6,
+    "review_count": 65,
+    "price": "$600.99",
+    "phone": "+234 804 321 0987",
+    "location": "78 Ikoyi Crescent, Lagos, LA, NG",
+    "image": "https://www.flowers-lagos.ng/static/multishop_customer/flowers-lagos.ng/img/flowers_lagos_logo.svg",
+    "website": "https://www.flowers-lagos.ng/",
+    "description": "Offering stunning floral arrangements and bouquets for all types of events."
+  },
+  {
+    "id": "vendor-005",
+    "name": "Event Pro Photography",
+    "category": "Photography",
+    "rating": 4.9,
+    "review_count": 150,
+    "price": "$500.00",
+    "phone": "+234 909 683 7408",
+    "location": "10 Ogundana St, Ikeja, Lagos, LA, NG",
+    "image": "https://www.finelib.com/images/listings/tn/32668_company_logo.png",
+    "website": "http://www.events-pro.com/",
+    "description": "Capturing the essence of your events with professional photography services."
+  },
+  {
+    "id": "vendor-006",
+    "name": "Cakes aand Cream",
+    "category": "Bakery",
+    "rating": 4.5,
+    "review_count": 70,
+    "price": "$489.59",
+    "phone": "+234 803 302 0863",
+    "location": " 8, CMD Road, Town Square Mall, Opposite Magodo Brooks Estate North gate, Ikeja, Lagos LA, NG",
+    "image": "https://cakesandcream.ng/wp-content/uploads/2023/07/Cakes_and_Cream_logo_2.png",
+    "website": "https://cakesandcream.ng/",
+    "description": "Custom cakes and pastries for weddings, birthdays, and special occasions."
+  }
+]

@@ -1,0 +1,272 @@
+:root {
+  --primary: #8ab3c0;
+  --secondary: #fff8f0;
+  --accent1: #003b4f;
+  --accent2: #b3a36e;
+  --accent3: #18181b;
+  --font-head: "Literata", serif;
+  --font-body: "Rasa", serif;
+/* sizes */
+  --font-base: 18px;
+  --small-font: 0.8em;
+  --large-font: 1.2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-base);
+  color: var(--dark-grey);
+}
+.hero img {
+  width: 100%;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: var(--primary);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  a{
+    color: #18181b;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 50px;
+  
+  }
+  &:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+}
+
+.logo {
+  line-height: 60px;
+  width: 245px;
+  overflow: hidden;
+  display: flex;
+  font-size: 30px;
+  text-align: right;
+  font-family: var(--font-headline);
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.logo a {
+  text-decoration: none;
+  color: var(--font-body);
+}
+.hero {
+  position: relative;
+}
+.hero .logo {
+  position: absolute;
+  left: calc(50% - 60px);
+  bottom: -10px;
+  background-color: white;
+}
+.logo--square {
+  font-size: var(--small-font);
+  width: 110px;
+  height: 80px;
+
+  flex-direction: column;
+  align-items: flex-end;
+  box-shadow: 1px 1px 4px var(--light-grey);
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.logo--square img {
+  width: 90px;
+  height: 90px;
+  margin-top: -1.3em;
+}
+.logo--square > div {
+  margin-top: -1.7em;
+  font-size: 0.6em;
+}
+/* utility classes */
+.highlight {
+  color: var(--tertiary-color);
+}
+
+button {
+  padding: 0.5em 2em;
+  background-color: var(--secondary-color);
+  color: white;
+  margin: auto;
+  display: block;
+  border: 0;
+  font-size: var(--large-font);
+  cursor: pointer;
+}
+.divider {
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 40px;
+}
+/* End utility classes */
+
+.mission {
+  padding: 0 0.5em;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: auto;
+}
+.vendors {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.vendor-details {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.vendor-details a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem;
+  input,
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+button {
+  background: var(--accent1);
+  color: white;
+  padding: 0.5em 2em;
+  margin: auto;
+  display: block;
+  font-size: var(--large-font);
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background: var(--accent2);
+  }
+}
+/* Vendor Grid */
+.vendor-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Vendor Card */
+.vendor-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-3px);
+  }
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  }
+  p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    color: #333;
+  }
+  a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #0077b6;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.vendors {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--accent1);
+  &:hover {
+    color: var(--accent3);
+  }
+}
+
+footer {
+  background: var(--accent1);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* alert styling */
+.alert {
+  background: var(--accent2);
+  color: var(--accent3);
+  padding: 1rem;
+  position: relative;
+  & button {
+    background: none;
+    border: none;
+    color: var(--accent3);
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+  body {
+    margin: auto;
+    font-size: var(--font-base);
+  }
+
+  .mission {
+    font-size: var(--large-font);
+  }
+
+  .vendor-card {
+    font-size: inherit;
+    grid-template-columns: 150px auto 15%;
+  }
+}
+
+footer {
+  font-size: var(--small-font);
+  padding: 1em;
+}

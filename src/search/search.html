@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planning Hub</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+    </header>
+    <main class="container">
+      <div class="hero">
+        <img
+          src="/images/banner-sm.jpg"
+          srcset="images/banner-sm.jpg 500w, images/banner.jpg"
+          alt="image of an event"
+        />
+        <div class="logo logo--square">
+          <img src="/images/eventlogo.png" alt="tent image for logo" />
+          <div>Event<span class="highlight">Hub</span></div>
+        </div>
+        <div class="mission">
+          <p>
+            Our mission is to simplify event planning by creating a patform 
+            where everything from vendor selection 
+            to budgeting is in one place., streamlining the event 
+            organization process.
+          </p>
+        </div>
+      </div>
+
+      <section>
+        <h2>Search Vendors</h2>
+        <input type="text" id="searchBox" placeholder="Search for vendors by name or location..." />
+        <div id="searchResults" class="vendor-grid"></div>
+      </section>
+    </main>
+    <footer id="main-footer"></footer>
+    <script type="module" src="../js/search.js"></script>
+  </body>
+</html>
