@@ -98,17 +98,6 @@ nav {
 .highlight {
   color: var(--tertiary-color);
 }
-
-button {
-  padding: 0.5em 2em;
-  background-color: var(--secondary-color);
-  color: white;
-  margin: auto;
-  display: block;
-  border: 0;
-  font-size: var(--large-font);
-  cursor: pointer;
-}
 .divider {
   border-bottom: 2px solid var(--primary-color);
   font-size: 40px;
@@ -135,34 +124,7 @@ button {
   color: var(--dark-grey);
 }
 
-form {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem;
-  input,
-  button {
-    padding: 0.5rem;
-    font-size: 1rem;
-  }
-}
 
-button {
-  background: var(--accent1);
-  color: white;
-  padding: 0.5em 2em;
-  margin: auto;
-  display: block;
-  font-size: var(--large-font);
-  width: 200px;
-  text-decoration: none;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  &:hover {
-    background: var(--accent2);
-  }
-}
 /* Vendor Grid */
 .vendor-details {
   display: grid;
@@ -213,15 +175,81 @@ button {
   margin-top: 2rem;
   padding: 1rem;
 }
-.favorite-btn {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-  color: var(--accent1);
-  &:hover {
-    color: var(--accent3);
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem;
+  input,
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
+}
+
+button {
+  background: var(--accent1);
+  color: white;
+  padding: 1.5em 2em;
+  margin: auto;
+  display: block;
+  font-size: var(--large-font);
+  width: 200px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background: var(--accent2);
+  }
+}
+#searchInput {
+  display: flex;
+  background-color: var(--accent2);
+  width: 60%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+#sortBy{
+  background: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: var(--accent3);
+  &:hover {
+    color: var(--accent2);
+  }
+}
+#ratingFilter{
+  background: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: var(--accent3);
+  &:hover {
+    color: var(--accent2);
+  }
+}
+#categoryFilter{
+  background: none;
+  font-size: 1.2rem;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+  color: var(--accent3);
+  &:hover {
+    color: var(--accent2);
+  }
+}
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer {

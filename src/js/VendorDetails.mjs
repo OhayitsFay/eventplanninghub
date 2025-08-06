@@ -12,8 +12,7 @@ function vendorCardTemplate(vendor) {
       <p><strong>Reviews: </strong>${vendor.review_count}</p>
       <p>${vendor.description}</p>
       <a href="${vendor.website}" target="_blank">Visit Profile</a>
-    </section>
-  `;
+    </section>`;
 }
 export default class VendorDetails {
   constructor(category, dataSource,listElement) {
@@ -29,5 +28,8 @@ export default class VendorDetails {
 
   renderList(vendorList) {
     renderListWithTemplate(vendorCardTemplate, this.listElement, vendorList);
+  }
+  static renderVendor(vendor) {
+    return vendorCardTemplate(vendor);
   }
 }
