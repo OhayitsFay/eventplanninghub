@@ -33,6 +33,13 @@ async function handleSearch() {
       results.forEach(v => {
         listElement.insertAdjacentHTML("beforeend", VendorDetails.renderVendor(v));
       });
+      // Add expand/collapse interaction for each card
+      listElement.querySelectorAll('.vendor-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+          if (!e.target.closest("a")) {
+            card.classList.toggle("expanded");}
+        });
+      });
     }
   } catch {
     listElement.innerHTML = "<p>Error loading vendors. Please try again.</p>";

@@ -135,40 +135,72 @@ nav {
   margin: 0 auto;
 }
 
-/* Vendor Card */
+/* Vendor Card  and animations*/
 .vendor-card {
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 12px;
   padding: 1rem;
   background: #fff;
   text-align: center;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4cm 15px rgba(0, 0, 0, 0.5);
+  transition:  opacity 0.9s ease, transform 0.6s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transform: translateY(20px);
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
   }
   img {
     width: 100%;
-    height: 150px;
+    height: 160px;
     object-fit: contain;
-    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
   }
   h3 {
-    font-size: 1.1rem;
     margin: 0.5rem 0;
+    font-size: var(--font-body);
+    
   }
   p {
-    font-size: 0.9rem;
+    font-size: var(--font-base);
     margin: 0.25rem 0;
     color: #333;
+    line-height: 1.8;
   }
   a {
-    display: block;
-    margin-top: 0.5rem;
-    color: #0077b6;
+    display: inline-block;
+    margin-top: 0.2rem;
+    color: var(--primary);
     font-weight: bold;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
+}
+.vendor-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Expandable section */
+.card-details {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.vendor-card.expanded .card-details {
+  max-height: 1000px; /* enough to show full content */
+  opacity: 1;
+  pointer-events: 1rem;
 }
 
 .vendors {
